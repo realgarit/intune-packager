@@ -1,6 +1,6 @@
 # intune-packager
 
-This repository contains a full automated script for packaging and deploying applications using **Microsoft Intune**. The solution includes a streamlined PowerShell script to package Win32 apps, manage installation arguments, and configure registry settings.
+This repository contains a full automated script for packaging and deploying applications using **Microsoft Intune**. The solution includes a streamlined PowerShell script to package Win32 app and manage installation arguments.
 
 ---
 
