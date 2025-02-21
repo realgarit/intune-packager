@@ -33,6 +33,12 @@ This project is based on the excellent work from the [MSEndpointMgr/IntuneWin32A
 - 🛠 **Automated Packaging:** Automate packaging of `.exe` or `.msi` installers for deployment via Intune.
 - ⚙️ **Custom Installation & Uninstallation:** Use customizable installation and uninstallation arguments.
 
+> :bulb: **Pro Tip**: If you need to force an Intune sync, run the following PowerShell command. It retrieves the scheduled task named PushLaunch and starts it, effectively initiating an Intune sync:
+> 
+> ```powershell
+> Get-ScheduledTask | Where-Object { $_.TaskName -eq 'PushLaunch' } | Start-ScheduledTask
+> ```
+
 ---
 
 ## Authentication
