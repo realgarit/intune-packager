@@ -15,6 +15,7 @@ This repository contains a full automated script for packaging and deploying app
     - [Step 3: Configure Authentication](#step-3-configure-authentication)
     - [Step 4: Retrieve the Client ID](#step-4-retrieve-the-client-id)
     - [Step 5: Add Authentication Parameters to Your Script](#step-5-add-authentication-parameters-to-your-script)
+- [Usage](#Usage)
 
 ---
 
@@ -94,3 +95,17 @@ To successfully authenticate and use this script for Intune automation, you will
 
 ### Step 5: Add Authentication Parameters to Your Script
 Once you have the **Client ID** and **Redirect URI**, add them as parameters to your PowerShell script to enable authentication.
+
+---
+
+## Usage
+
+1. **Clone Repository**:
+    ```bash
+    git clone https://github.com/realgarit/intune-packager
+    cd intune-packager
+    ```
+2. **Open `intune-packager-arguments.ps1`**
+3. **Update the parameters (for example change PackageType to MSI or EXE according to your needs) according to your software**
+4. **Run `intune-packager-arguments.ps1`**
+
