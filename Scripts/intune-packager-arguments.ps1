@@ -1,6 +1,6 @@
 $ClientID = "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx"
 $RedirectURI = "msalxxxxx-xxxx-xxxx-xxxx-xxxxxx://auth"
-$PackageType = "MSI"
+$PackageType = "EXE"
 $PackageName = "JabraDirect"
 $Publisher = "Jabra"
 $AppVersion = "6.21.01701"
