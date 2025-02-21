@@ -27,7 +27,7 @@ else {
 }
 "@
 
-.\TeamsWizard_packaging.ps1 -ClientID $ClientID `
+.\intune-packager-main.ps1 -ClientID $ClientID `
                                         -RedirectURI $RedirectURI `
                                         -PackageType $PackageType `
                                         -PackageName $PackageName `
