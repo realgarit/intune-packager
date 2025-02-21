@@ -106,12 +106,11 @@ Once you have the **Client ID** and **Redirect URI**, add them as parameters to 
 
 ## Usage
 
-1. **Clone Repository**:
+1. Clone Repository:
     ```bash
     git clone https://github.com/realgarit/intune-packager
     cd intune-packager
     ```
-2. **Open `intune-packager-arguments.ps1`**
-3. **Update the parameters (for example change PackageType to MSI or EXE according to your needs) according to your software**
-4. **Run `intune-packager-arguments.ps1`**
-
+2. Open `intune-packager-arguments.ps1`
+3. Update the parameters (e.g. change PackageType to MSI or EXE) according to your software
+4. Run `intune-packager-arguments.ps1`
