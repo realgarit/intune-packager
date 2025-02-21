@@ -9,7 +9,7 @@ $TenantName = "example.onmicrosoft.com"
 $Assignment = "g_devices_testing"
 $InstallArgs = "JabraDirectSetup.exe /install /quiet /norestart"
 $UninstallArgs  = "JabraDirectSetup.exe /uninstall /quiet /norestart"
-$DetectionArgs = @"
+$DetectionArgs = @'
 if (Test-Path 'HKLM:\SOFTWARE\WOW6432Node\Jabra\Direct') {
     $regValue = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Jabra\Direct' -Name 'Version').Version
     $currentVersion = [version]($regValue.Trim())
@@ -25,7 +25,7 @@ if (Test-Path 'HKLM:\SOFTWARE\WOW6432Node\Jabra\Direct') {
 else {
     throw "Registry key 'HKLM:\SOFTWARE\WOW6432Node\Jabra\Direct' not found."
 }
-"@
+'@
 
 .\intune-packager-main.ps1 -ClientID $ClientID `
                                         -RedirectURI $RedirectURI `
